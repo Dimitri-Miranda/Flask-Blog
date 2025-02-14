@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <style>
+        body{
+            background-color:#181a1b;
+            color: #cfc100;
+            pre {
+                color: darkviolet;
+            }
+        }
+    </style>
+        <meta charset="UTF-8">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h3><a class="btn btn-primary" href="/home">HOME</a></h3>
+        <h1>{{ title }}</h1>
+        <p>{{ date }}</p>
+        <p>{{ content }}</p>
+    </body>
+
+</html>

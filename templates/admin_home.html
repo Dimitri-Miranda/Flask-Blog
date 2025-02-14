@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <style>
+        body{
+            background-image: url("{{ url_for('static', filename='skelyspin.gif') }}");
+            background-repeat: repeat; /* Faz o GIF se repetir */
+            background-size: 100px 100px; /* Ajusta o tamanho do GIF repetido (em px, por exemplo) */
+            background-position: top left;
+            height: 100vh;
+            margin: 0;
+            background-color:#181a1b;
+            color: #cfc100;
+            marquee{
+                font-size: x-large;
+                
+            }
+        }
+        .container{
+            width: 60%; /* Largura da div */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            background-color: #18272e;
+            color: #cfc100;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+            text-align: left;
+            color: #cfc100;
+            border-radius: 15px;
+        }
+        .logo{
+            width: 70%;
+            margin: 0 auto; /* Centraliza horizontalmente */
+            text-align: center;
+            pre {
+                background-color: #18272e;
+                color: darkviolet;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/admin/new_post">Novo post</a>
+        <div class="logo">
+            <pre>
+
+      ▄▄▄█████▓ ██░ ██ ▓█████               
+      ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀               
+      ▒ ▓██░ ▒░▒██▀▀██░▒███                 
+      ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄               
+        ▒██▒ ░ ░▓█▒░██▓░▒████▒              
+        ▒ ░░    ▒ ░░▒░▒░░ ▒░ ░              
+          ░     ▒ ░▒░ ░ ░ ░  ░              
+        ░       ░  ░░ ░   ░                 
+                ░  ░  ░   ░  ░              
+                                      
+ ██▓     ██▓ ▄████▄   ██░ ██   ██████ 
+▓██▒    ▓██▒▒██▀ ▀█  ▓██░ ██▒▒██    ▒ 
+▒██░    ▒██▒▒▓█    ▄ ▒██▀▀██░░ ▓██▄   
+▒██░    ░██░▒▓▓▄ ▄██▒░▓█ ░██   ▒   ██▒
+░██████▒░██░▒ ▓███▀ ░░▓█▒░██▓▒██████▒▒
+░ ▒░▓  ░░▓  ░ ░▒ ▒  ░ ▒ ░░▒░▒▒ ▒▓▒ ▒ ░
+░ ░ ▒  ░ ▒ ░  ░  ▒    ▒ ░▒░ ░░ ░▒  ░ ░
+  ░ ░    ▒ ░░         ░  ░░ ░░  ░  ░  
+    ░  ░ ░  ░ ░       ░  ░  ░      ░  
+            ░                         
+▄▄▄█████▓ ▒█████   ███▄ ▄███▓ ▄▄▄▄    
+▓  ██▒ ▓▒▒██▒  ██▒▓██▒▀█▀ ██▒▓█████▄  
+▒ ▓██░ ▒░▒██░  ██▒▓██    ▓██░▒██▒ ▄██ 
+░ ▓██▓ ░ ▒██   ██░▒██    ▒██ ▒██░█▀   
+  ▒██▒ ░ ░ ████▓▒░▒██▒   ░██▒░▓█  ▀█▓ 
+      ▒ ░░   ░ ▒░▒░▒░ ░ ▒░   ░  ░░▒▓███▀▒ 
+    ░      ░ ▒ ▒░ ░  ░      ░▒░▒   ░  
+  ░      ░ ░ ░ ▒  ░      ░    ░    ░  
+             ░ ░         ░    ░       
+                                   ░  
+        
+            </pre>
+        <marquee behavior="sliding" direction="left">Welcome to the Tomb...</marquee>
+        </div>
+        <br>
+        <br>
+        <br>
+        <ul>
+            {% for title, date, post_id in posts %}
+            <li><h4><a href="post/{{ post_id }}">{{ title }}</a></h4><h5><small>{{ date }}</small></h5></li>
+            <small><a href="edit/{{ post_id }}">Editar</a> <a href="delete/{{ post_id }}">Apagar</a></small><br><br>
+            {% endfor %}
+        </ul> 
+    </div>
+
+</body>
+</html>

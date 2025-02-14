@@ -1,0 +1,34 @@
+{
+    "posts": [
+        {
+            "post_id": "3",
+            "title": "Receita Fácil de Panquecas Atualizada!!!",
+            "date": {
+                "day": "12",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Aprenda a fazer panquecas deliciosas com poucos ingredientes e em menos de 15 minutos!"
+        },
+        {
+            "post_id": "5",
+            "title": "Destinos Imperdíveis para sua Próxima Viagem",
+            "date": {
+                "day": "14",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Conheça alguns dos melhores lugares para visitar e planeje sua próxima aventura!"
+        },
+        {
+            "post_id": "3",
+            "title": "NVOOVOV",
+            "date": {
+                "day": "13",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "asdasds"
+        }
+    ]
+}

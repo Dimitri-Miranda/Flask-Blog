@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #181a1b;
+                color: #cfc100;
+            }
+
+            .container {
+                display: block;
+                background-color: #18272e;
+                color: #cfc100;
+                padding: 20px;
+                text-align: left;
+                width: 100%;
+                max-width: 600px;
+                border-radius: 15px;
+
+                input[type="text"],
+                input[type="date"],
+                textarea,
+                input[type="submit"]{
+                    width: 500px;
+                    background-color: #3b3b3b;
+                    color: #fff;
+                    border-radius: 5px;
+                    
+                }
+            }
+
+            textarea {
+                resize: none;
+            }
+        </style>
+        <title>Editar Post</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Editar Post</h1>
+            <form action="/admin/edit/ {{ post_id }}" method="post">
+                <input type="text" name="title" id="title" value="{{ title }}" required><br><br>
+                <input type="date" name="date" id="date" value="{{ date }}"><br><br>
+                <textarea name="post_area" id="post_area" cols="50" rows="20"  required>{{ content }}</textarea><br><br>
+                <input type="submit" name="submit" value="Editar" id="submit" style="width: 100px;">
+            </form>
+        </div>
+    </body>
+</html>

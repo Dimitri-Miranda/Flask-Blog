@@ -1,0 +1,67 @@
+{"posts": [
+    {"post_id": "",
+    "title": "",
+        "date": {
+            "day": "",
+            "month": "",
+            "year": ""
+        },
+    "content": ""
+        }
+    ]
+}  
+
+{
+    "posts": [
+        {
+            "post_id": "1",
+            "title": "Bem-vindo ao Nosso Blog!",
+            "date": {
+                "day": "10",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Este é o nosso primeiro post! Fique ligado para mais novidades e conteúdos interessantes."
+        },
+        {
+            "post_id": "2",
+            "title": "Dicas para um Dia Produtivo",
+            "date": {
+                "day": "11",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Quer ser mais produtivo? Aqui estão algumas dicas práticas para aproveitar melhor o seu tempo."
+        },
+        {
+            "post_id": "3",
+            "title": "Receita Fácil de Panquecas",
+            "date": {
+                "day": "12",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Aprenda a fazer panquecas deliciosas com poucos ingredientes e em menos de 15 minutos!"
+        },
+        {
+            "post_id": "4",
+            "title": "Os Benefícios da Leitura Diária",
+            "date": {
+                "day": "13",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Descubra por que ler todos os dias pode melhorar sua criatividade, vocabulário e bem-estar."
+        },
+        {
+            "post_id": "5",
+            "title": "Destinos Imperdíveis para sua Próxima Viagem",
+            "date": {
+                "day": "14",
+                "month": "02",
+                "year": "2025"
+            },
+            "content": "Conheça alguns dos melhores lugares para visitar e planeje sua próxima aventura!"
+        }
+    ]
+}
